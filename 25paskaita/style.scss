@@ -43,3 +43,21 @@ body {
     }
 }
 
+.todo-input {
+    padding-top: 16px;
+    input {
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid $undone-color;
+        min-width: 200px;
+    }
+    .add-button {
+        margin-left: 16px;
+        padding: 9px 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #24a0ed;
+        color: white;
+    }
+}
+
