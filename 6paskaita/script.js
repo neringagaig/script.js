@@ -13,7 +13,7 @@
 //     console.log(`${i+1}. ${char}`);
 // }
 // const firstChar = myName.charAt(0);
-// const lastChar = myName.charAt(myNAme.lenght -1);
+// const lastChar = myName.charAt(myNAme.length -1);
 
 // //MASYVAI/ARRAY
 // const fruits = ["banana", "apple", "orange"];
@@ -51,7 +51,7 @@
 
 // FUNKCIJOS
 //yra 2 rusiu funkcijos
-//1. void rusis/funkcija, neturi return reiksmes, ji tik printina 
+//1. void rusis/funkcija, neturi return reiksmes, ji tik printina
 //2. return rusis/funkcija
 // function square(number) {
 //     return number * number;
@@ -66,7 +66,6 @@
 // const loggedValue = logger("Testing...");
 // console.log(loggedValue);
 // //cia void
-
 
 // function printAllArrayItems(array) {
 //     for(let i = 0; i < array.lenght; i++) {
@@ -91,7 +90,6 @@
 // const repeatedString = repeatString("rokas", 2);
 // console.log(repeatedString);
 
-
 // function addition(a,b){
 //     return a+b;
 // }
@@ -101,5 +99,3 @@
 //     return a-b;
 // }
 // console.log(substraction(10, 5));
-
-

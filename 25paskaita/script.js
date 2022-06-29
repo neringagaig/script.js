@@ -3,13 +3,18 @@ const renderTodo = (todo) => {
   //istraukti itemus is objekto kurie reikalingi "destruction"
   const todoEl = document.createElement("div");
   const todoTitle = document.createElement("p");
+  const todoActions = document.createElement("div");
   const todoStatus = document.createElement("span");
+  const DeleteButton = document.createElement("button");
 
   todoEl.className = "todo";
   todoTitle.className = completed ? "todo-title done" : "todo-title";
   todoStatus.className = completed ? "todo-status done" : "todo-status";
+  todoActions.className = "todo-actions";
+  DeleteButton.className = "todo-delete";
 
   todoTitle.textContent = title;
+  DeleteButton.textContent = "Delete";
 
   todoStatus.addEventListener("click", () => {
     todoStatus.classList.toggle("done");
@@ -20,8 +25,22 @@ const renderTodo = (todo) => {
     //tekstas kad pakeistu spalva kai nuspaudi rutuliuka
     console.log(todoStatus.completed);
   });
+  deleteButton.addEventListener("click", () => {
+    const params = {
+      method: "DELETE",
+    };
+    fetch(`https://jsonplaceholder.typicode.com/${id}`, params)
+      .then((resp) => resp.json())
+      .then((response) => {
+        console.log("succsess", todo);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  });
 
-  todoEl.append(todoTitle, todoStatus);
+  todoActions.append(todoStatus, DeleteButton);
+  todoEl.append(todoTitle, todoActions);
   document.querySelector(".todo-container").prepend(todoEl);
 };
 

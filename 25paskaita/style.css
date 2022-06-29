@@ -46,6 +46,24 @@ body {
   color: lightgray;
 }
 
+.todo-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.todo-delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
 .todo-status {
   padding: 12px;
   background-color: #aaaaaa;

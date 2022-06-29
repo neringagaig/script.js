@@ -36,6 +36,19 @@ body {
         }
     }
 
+    &-actions {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    &-delete {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 6px 10px;
+        cursor: pointer;    
+    }
+
     &-status {
         padding: 12px;
         background-color: $undone-color;
