@@ -10,7 +10,6 @@
 // const hasK = (array) => array.filter((p) => p.first_name.includes("K")).length;
 // console.log(hasK(data));
 
-
 //OBJEKTINIS PROGRAMAVIMAS
 
 //konstruktoriaus funkcija rasoma is didziosios raides
@@ -67,5 +66,3 @@
 // const softwareDeveloper = new Employee("Front-end engineer", 4000, 2);
 // const salesManager = new Employee("Sales Manager", 6000, 7);
 // console.log(salesManager.getBonus());
-
-

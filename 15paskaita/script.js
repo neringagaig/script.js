@@ -2,7 +2,7 @@
 
 // .splice()
 
-const sentence = ["I", "study","Javascript","right","now"];
+const sentence = ["I", "study", "Javascript", "right", "now"];
 
 // sentence.splice(0,2); //ištrina pirmus du ir grazina
 
@@ -10,7 +10,7 @@ const sentence = ["I", "study","Javascript","right","now"];
 // pirmas argumentas bus vieta, antras argumentas kiek istrinti
 
 // sentence.splice(2, 1, "TypeScript"); // istrina javascript ir pakeicia i typescript
-// sentence.splice(1, 4, "studied", "typescript", "before"); 
+// sentence.splice(1, 4, "studied", "typescript", "before");
 // console.log(sentence);
 
 // const sliced = sentence.slice(0, 3);
@@ -25,6 +25,7 @@ const sentence = ["I", "study","Javascript","right","now"];
 // },0);
 // console.log("");
 // console.log(total);
+// suskaiciuoti visus skaicius
 
 // const sorted = numbers.sort((a, b) => a - b); //surikiuoja didejimo tvarka
 // const sortedDescendingOrder = numbers.sort((a, b) => b - a) // surikiuota mazejimo tvarka
@@ -66,6 +67,6 @@ let arr = [11, -2, 34, 45, 19, 6];
 //     }, 0);
 //     return sum;
 //     }
-    
+
 //     const sum = getMaxSubSum(arr);
 //     console.log(sum);
